@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Фильмы</title>
+</head>
+<body>
+ @import url(http://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900);
+
+@font-face {
+	font-family: 'BebasNeueBook';
+	src: url('../fonts/BebasNeueBook.eot');
+	src: url('../fonts/BebasNeueBook.eot') format('embedded-opentype'),url('../fonts/BebasNeueBook.woff') format('woff'),url('../fonts/BebasNeueBook.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+	font-family: "BebasNeueBook", "Lato", "Avenir Next", Arial, sans-serif;
+	margin: 0;
+	background: #000;
+	background-size: cover;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.overlay {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.overlay h2 {
+    background: #221c1c none repeat scroll 0 0;
+    color: white;
+    font-weight: bold;
+    font-size: 8vh;
+    mix-blend-mode: overlay;
+    padding: 6vh 8vh;
+    text-align: center;
+    border-radius: 0.4em;
+    }
+}
+header {
+	background:#221c1c;
+	position: fixed;
+	width: 100%;
+	height: 7vh;
+	text-align: center;
+	color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+	padding: 2.5vh;
+}
+
+
+
+
+nav a {
+    color: inherit;
+    padding: 1vh 2vh;
+    text-decoration: none;
+    font-size: 2vh;
+}
+
+a {
+	text-decoration: none;
+}
+
+.overlay h2:hover {
+	color: orange;
+}
+@media screen and (min-width: 44.375em) {
+}
+
+@media screen and (min-width: 48.9375em) {
+}
+
+@media screen and (min-width: 56.875em) {
+}
+
+@media screen and (min-width: 61.5625em) {
+}
+@media screen and (min-width: 75em) {
+}
+a.foo {
+  padding: 5px 10px;
+  background: #69f;
+  color: #000;
+  }
+a.foo:hover {
+  background: #33f;
+  color: #fff;
+  }
+
+  a.foo {
+  padding: 5px 10px;
+  background: #69f;
+  color: #000;
+  -webkit-transition-property: background;
+  -webkit-transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease;
+  }
+a.foo:hover {
+  background: #33f;
+  color: #fff;
+  }
+
+  a.foo {
+  padding: 5px 10px;
+  background: #69f;
+  color: #000;
+  -webkit-transition: background 0.5s ease;
+  }
+a.foo:hover {
+  background: #33f;
+  color: #fff;
+  }
+
+  a.foo {
+  padding: 5px 10px;
+  background: #69f;
+  color: #000;
+  -webkit-transition: background 0.5s ease, color 0.3s ease;
+  }
+a.foo:hover {
+  background: #33f;
+  color: #fff;
+  }
+
+  a.foo {
+  padding: 5px 10px;
+  background: #69f;
+  color: #000;
+  -webkit-transition: all 0.5s ease;
+  -webkit-transition-delay: 0.5s;
+  }
+a.foo:hover {
+  background: #33f;
+  color: #fff;
+  }
+</body>
+</html>
